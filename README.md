@@ -2,7 +2,7 @@
 
 A Collection of all the trip organisers in India. Inspect, compare and choose the best one for you.
 
-## Available Scripts
+## Local Setup
 
 In the project directory, you can run:
 
@@ -36,11 +36,12 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Deployment
+## Deployment
 
 Setup containers and run
 
-`docker run -d -p 3000:3000 docker/tripy`
+`docker build -t tripy .`
+
+`docker run -d -p 3000:3000 tripy`
 
 The app runs on nginx server and is deplyed on container.
-
