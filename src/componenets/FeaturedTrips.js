@@ -8,7 +8,6 @@ import Title from './Title';
 const FeaturedTrips = () => {
     const context = useContext(TripContext);
     const {loading, featuredTrips:trips} = context;
-
     const featuredTrips = trips.map(trip => {
         return <Trip key={trip.id} trip ={trip}/>
     })
