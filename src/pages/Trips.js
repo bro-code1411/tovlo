@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import TripContainer from "../componenets/TripContainer";
 
 const Trips = () => {
+
   return (
     <>
       <Hero hero="roomsHero">
