@@ -1,8 +1,8 @@
 {
-  "name": "tripy",
+  "name": "tovlo",
   "version": "0.1.0",
   "private": true,
-  "homepage":"http://bro-code1411.github.io/tripy",
+  "homepage": "http://bro-code1411.github.io/tovlo",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
