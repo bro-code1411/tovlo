@@ -8,16 +8,14 @@ const Trips = () => {
 
   return (
     <>
-      <Hero hero="roomsHero">
+      {/* <Hero hero="roomsHero">
         <Banner title="Trips">
           <Link to="/" className="btn-primary">
             return home
           </Link>
         </Banner>
-      </Hero>
-      <TripContainer>
-          
-      </TripContainer>
+      </Hero> */}
+      <TripContainer/>
     </>
   );
 };

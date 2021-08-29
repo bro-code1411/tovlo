@@ -2,11 +2,9 @@ import React from "react";
 import { useContext } from "react";
 import { TripContext } from "../Context";
 import Title from "./Title";
+import { getUnique } from "./util/Util";
 
-const getUnique = (items, value) => {
-  return [...new Set(items.map((item) => item[value]))];
-};
-const TripFilter = ({ trips ,tripFilter, handleChange}) => {
+const TripFilter = ({ trips, tripFilter, handleChange }) => {
   const {
     type,
     capacity,
@@ -29,9 +27,13 @@ const TripFilter = ({ trips ,tripFilter, handleChange}) => {
     );
   });
   let people = getUnique(trips, "capacity");
-  people = people.map((item,index)=>{
-      return <option value={item} key={index}>{item}</option>
-  })
+  people = people.map((item, index) => {
+    return (
+      <option value={item} key={index}>
+        {item}
+      </option>
+    );
+  });
   return (
     <section className="filter-container">
       <Title title="search trips" />
@@ -63,7 +65,6 @@ const TripFilter = ({ trips ,tripFilter, handleChange}) => {
             {people}
           </select>
         </div>
-        
       </form>
     </section>
   );
