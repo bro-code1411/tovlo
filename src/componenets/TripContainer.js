@@ -55,7 +55,6 @@ const TripContainer = () => {
 
   return (
     <>
-      Hello from rooms container
       <TripFilter trips={trips} tripFilter={tripFilter} handleChange={handleChange}/>
       <TripList trips={filteredTrips()} />
     </>

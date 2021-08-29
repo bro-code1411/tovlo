@@ -13,7 +13,7 @@ const FeaturedTrips = () => {
     })
     return (
         <section className ="featured-rooms">
-            <Title title="featured rooms"/>
+            <Title title="featured trips"/>
             <div className="featured-rooms-center">
                 {loading?<Loading/>:featuredTrips}
             </div>
