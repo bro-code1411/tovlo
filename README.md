@@ -40,8 +40,8 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 Setup containers and run
 
-`docker build -t tripy .`
+`docker build -t tovlo .`
 
-`docker run -d -p 3000:3000 tripy`
+`docker run -d -p 3000:3000 tovlo`
 
 The app runs on nginx server and is deplyed on container.
