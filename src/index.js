@@ -9,7 +9,7 @@ import { TripProvider } from "./Context";
 ReactDOM.render(
   <React.StrictMode>
     <TripProvider>
-      <BrowserRouter basename="/tovlo">
+      <BrowserRouter>
         <App />
       </BrowserRouter>
     </TripProvider>
