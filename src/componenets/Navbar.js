@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../images/logo.svg";
+import logo from "../images/logo-web.svg";
 import { FaAlignRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -12,7 +12,7 @@ export const Navbar = () => {
       <div className="nav-center">
         <div className="nav-header">
           <Link to="/">
-            <img src={logo} alt="Tovlo" />
+            <img src={logo} height="40px" alt="Tovlo" />
           </Link>
           <button
             type="button"
