@@ -12,7 +12,7 @@ export const Navbar = () => {
       <div className="nav-center">
         <div className="nav-header">
           <Link to="/">
-            <img src={logo} alt="Tripy" />
+            <img src={logo} alt="Tovlo" />
           </Link>
           <button
             type="button"
