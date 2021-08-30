@@ -514,4 +514,59 @@ h6 {
     max-width: 1170px;
   }
 }
-/* end of rooms fitler*/
+
+.filter-container {
+  flex-grow: 1;
+  padding-top: 4rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.filter-para {
+  font-size: 0.75rem;
+}
+
+.filter-heading {
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-button {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.filter-button:hover {
+  cursor: pointer;
+  border-radius: 9999px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.filter-button:active {
+  --transform-scale-x: 0.95;
+  --transform-scale-y: 0.95;
+  background-color: #f7fafc;
+  transition-property: transform;
+  transition-duration: 100ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.filter-row {
+  display: none;
+  display: inline-flex;
+  margin-bottom: 1.25rem;
+  margin-left: 0.75rem;
+  color: #2d3748;
+  white-space: nowrap;
+}
+
+@media (min-width: 1024px) {
+  .filter-row {
+    display: inline-flex;
+  }
+}
