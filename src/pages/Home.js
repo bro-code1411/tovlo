@@ -3,6 +3,7 @@ import homeBgImg from "../images/home-bg.jpg";
 import Services from "../componenets/Services";
 import FeaturedTrips from "../componenets/FeaturedTrips";
 import AdSence from "react-adsense";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -11,13 +12,15 @@ const Home = () => {
         <img src={homeBgImg} layout="fill" objectFit="cover" alt="home bg" />
         <div className="absolute top-1/2 w-full text-center">
           <p className="text-sm sm:text-lg">Not sure where to go.</p>
-          <button
-            className="text-purple-500 bg-white px-10 py-4
+          <Link to="/trips">
+            <button
+              className="text-purple-500 bg-white px-10 py-4
          shadow-mv rounded-full font-bold my-3 hover:shadow-xl
          active:scale-90 transition duration-150"
-          >
-            I'm flexible
-          </button>
+            >
+              I'm flexible
+            </button>
+          </Link>
         </div>
       </div>
       <Services />

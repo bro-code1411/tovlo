@@ -1,8 +1,12 @@
 import React from "react";
 import logo from "../images/logo-web.svg";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { SearchIcon, MenuIcon, UserCircleIcon } from "@heroicons/react/solid";
+import { useState } from "react";
+
 export const Navbar = () => {
+  const [searchString, setSearchString] = useState("");
+  const history = useHistory();
   return (
     <nav
       className="sticky top-0 z-50 grid grid-cols-3 
@@ -22,11 +26,20 @@ export const Navbar = () => {
           placeholder="Start your search"
           className="pl-5 flex-grow bg-transparent outline-none
             text-gray-600 placeholder-gray-600"
+          value={searchString}
+          onChange={(event) => setSearchString(event.target.value)}
+          onKeyPress={(event) => {
+            if (event.key === "Enter") {
+              history.push({ pathname: "/trips", searchString });
+            }
+          }}
         />
-        <SearchIcon
-          className=" hidden md:inline-flex h-8 bg-red-400 text-white
+        <Link to={{ pathname: "/trips", searchString }}>
+          <SearchIcon
+            className=" hidden md:inline-flex h-8 bg-red-400 text-white
           rounded-full p-2 cursor-pointer md:mx-2"
-        />
+          />
+        </Link>
       </div>
 
       {/*right*/}
