@@ -12,7 +12,7 @@ export const Navbar = () => {
       <div className="nav-center">
         <div className="nav-header">
           <Link to="/">
-            <img src={logo} height="40px" alt="Tovlo" />
+            <img src={logo} className="h-9" alt="Tovlo" />
           </Link>
           <button
             type="button"
