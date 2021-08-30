@@ -515,28 +515,3 @@ h6 {
   }
 }
 /* end of rooms fitler*/
-/* start of home search filter */
-.input-wrapper {
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: var(--mainWhite);
-  padding: 0.5rem;
-  border-radius: 1rem;
-  color: var(--primaryColor);
-  opacity: 0.8;
-}
-
-.homeSearch {
-  font-size: 1.2em;
-  margin: 0 0.5rem 0 0.5rem;
-  width: 100%;
-  border: none;
-  outline: none;
-  background: var(--mainWhite);
-  color: var(--primaryColor);
-  opacity: 0.8;
-}
-
-/* end of home search filter */
