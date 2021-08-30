@@ -2,7 +2,6 @@ import React from "react";
 import Hero from "../componenets/Hero";
 import Services from "../componenets/Services";
 import FeaturedTrips from "../componenets/FeaturedTrips";
-import HomeSearch from "../componenets/HomeSearch";
 import AdSence from "react-adsense";
 
 const Home = () => {
@@ -14,7 +13,6 @@ const Home = () => {
                 Trips
             </Link>
             </Banner> */}
-        <HomeSearch />
       </Hero>
       <Services />
       <FeaturedTrips />
