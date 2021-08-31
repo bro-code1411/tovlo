@@ -9,8 +9,6 @@ const TripFilter = ({ trips, tripFilter, handleChange }) => {
     // price,
     // minPrice,
     // maxPrice,
-    // minSize,
-    // MaxSize,
     // breakfast,
     // pets,
   } = tripFilter;
