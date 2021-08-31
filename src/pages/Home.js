@@ -8,8 +8,12 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]">
-        <img src={homeBgImg} layout="fill" objectFit="cover" alt="home bg" />
+      <div className="relative ">
+        <img
+          src={homeBgImg}
+          className="w-full h-300 sm:h-400 lg:h-500 xl:h-600 2xl:h-700 object-cover"
+          alt="home_bg"
+        />
         <div className="absolute top-1/2 w-full text-center">
           <p className="text-sm sm:text-lg">Not sure where to go.</p>
           <Link to="/trips">
