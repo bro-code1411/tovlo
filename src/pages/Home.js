@@ -1,21 +1,32 @@
 import React from "react";
-import Hero from "../componenets/Hero";
+import homeBgImg from "../images/home-bg.jpg";
 import Services from "../componenets/Services";
 import FeaturedTrips from "../componenets/FeaturedTrips";
-import HomeSearch from "../componenets/HomeSearch";
 import AdSence from "react-adsense";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <>
-      <Hero hero="homeHero">
-        {/* <Banner title="Tovlo" subtitle="The trip you need" >
-            <Link to ="/trips" className="btn-primary">
-                Trips
-            </Link>
-            </Banner> */}
-        <HomeSearch />
-      </Hero>
+      <div className="relative ">
+        <img
+          src={homeBgImg}
+          className="w-full h-300 sm:h-400 lg:h-500 xl:h-600 2xl:h-700 object-cover"
+          alt="home_bg"
+        />
+        <div className="absolute top-1/2 w-full text-center">
+          <p className="text-sm sm:text-lg">Not sure where to go.</p>
+          <Link to="/trips">
+            <button
+              className="text-purple-500 bg-white px-10 py-4
+         shadow-mv rounded-full font-bold my-3 hover:shadow-xl
+         active:scale-90 transition duration-150"
+            >
+              I'm flexible
+            </button>
+          </Link>
+        </div>
+      </div>
       <Services />
       <FeaturedTrips />
       <AdSence.Google
