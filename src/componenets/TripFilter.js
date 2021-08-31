@@ -1,6 +1,4 @@
 import React from "react";
-import { useContext } from "react";
-import { TripContext } from "../Context";
 import Title from "./Title";
 import { getUnique } from "./util/Util";
 
@@ -8,13 +6,13 @@ const TripFilter = ({ trips, tripFilter, handleChange }) => {
   const {
     type,
     capacity,
-    price,
-    minPrice,
-    maxPrice,
-    minSize,
-    MaxSize,
-    breakfast,
-    pets,
+    // price,
+    // minPrice,
+    // maxPrice,
+    // minSize,
+    // MaxSize,
+    // breakfast,
+    // pets,
   } = tripFilter;
 
   let types = getUnique(trips, "type");
