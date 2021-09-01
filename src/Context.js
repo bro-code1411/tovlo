@@ -1,11 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import { items } from "./data";
+import { trip_data } from "./data";
 import { useEffect } from "react";
 const TripContext = React.createContext();
 
 const TripProvider = ({ children }) => {
-
   const [tripData, setTripData] = useState({
     trips: [],
     featuredTrips: [],
@@ -13,33 +12,38 @@ const TripProvider = ({ children }) => {
   });
 
   useEffect(() => {
-    let trips = formatData(items);
-    let featuredTrips = trips.filter(trip => trip.featured === true);
+    let trips = formatData(trip_data);
+    console.log(trips);
+
+    let featuredTrips = trips.filter((trip) => trip.plan.featured === true);
+    console.log(featuredTrips);
     setTripData({
-        trips,featuredTrips,loading:false
+      trips,
+      featuredTrips,
+      loading: false,
     });
   }, []);
 
-
   const getTrip = (slug) => {
     let tempTrips = [...tripData.trips];
-    const trip = tempTrips.find((trip)=>
-      trip.slug ===slug);
+    const trip = tempTrips.find((trip) => trip.plan.slug === slug);
     return trip;
   };
 
   function formatData(items) {
     let tempItems = items.map((item) => {
-      let id = item.sys.id;
-      let images = item.fields.images.map((images) => images.fields.file.url);
-      let trip = { ...item.fields, images, id };
+      let id = item.plan.id;
+      let images = item.images.map((images) => images.fields.file.url);
+      let trip = { ...item, images, id };
       return trip;
     });
     return tempItems;
   }
 
   return (
-    <TripContext.Provider value={{...tripData, getTrip}}>{children}</TripContext.Provider>
+    <TripContext.Provider value={{ ...tripData, getTrip }}>
+      {children}
+    </TripContext.Provider>
   );
 };
 

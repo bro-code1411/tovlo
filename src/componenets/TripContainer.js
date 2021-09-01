@@ -15,16 +15,13 @@ const TripContainer = ({ searchString }) => {
     price: 0,
     minPrice: 0,
     maxPrice: 0,
-    minSize: 0,
-    maxSize: 0,
     breakfast: false,
     pets: false,
   });
   useEffect(() => {
-    let maxPrice = Math.max(...trips.map((item) => item.price));
-    let maxSize = Math.max(...trips.map((item) => item.size));
+    let maxPrice = Math.max(...trips.map((item) => item.plan.price));
 
-    setTripFilter({ ...tripFilter, price: maxPrice, maxPrice, maxSize });
+    setTripFilter({ ...tripFilter, price: maxPrice, maxPrice });
   }, [trips]);
 
   const handleChange = (event) => {
@@ -52,7 +49,9 @@ const TripContainer = ({ searchString }) => {
       tempTrips = tempTrips.filter((trip) => trip.capacity >= capacity);
     }
     if (searchString) {
-      tempTrips = tempTrips.filter((trip) => trip.name === searchString);
+      tempTrips = tempTrips.filter((trip) =>
+        trip.search_context.includes(searchString.toLowerCase())
+      );
     }
     return tempTrips;
   };

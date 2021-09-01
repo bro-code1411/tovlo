@@ -17,17 +17,15 @@ const TripDetails = () => {
   }
 
   const {
-    name,
-    description,
+    plan: { name },
     capacity,
     size,
-    price,
-    extras,
-    breakfast,
-    pets,
+    plan: { price },
+    plan: { description },
     images,
+    itinerary,
   } = trip;
-const [mainImg, ...defaultImg] =images;
+  const [mainImg, ...defaultImg] = images;
 
   return (
     <>
@@ -54,19 +52,29 @@ const [mainImg, ...defaultImg] =images;
             <h3>info</h3>
             <h6>price : Rs{price}</h6>
             <h6>size: {size}</h6>
-            <h6>capacity: {capacity >1?`${capacity} people`:`${capacity} person`}</h6>
-            <h6>{pets ? "pets allowed":"pets not allowed"}</h6>
-            <h6>{breakfast && "free breakfast included"}</h6>
+            <h6>
+              capacity:{" "}
+              {capacity > 1 ? `${capacity} people` : `${capacity} person`}
+            </h6>
+            {/* <h6>{pets ? "pets allowed" : "pets not allowed"}</h6>
+            <h6>{breakfast && "free breakfast included"}</h6> */}
           </article>
         </div>
       </section>
       <section className="room-extras">
-        <h6>extras</h6>
-        <ul className="extras">
-          {extras.map((item,index)=>{
-            return <li key={index} >-{item}</li>
-          })}
-        </ul>
+        <h6>Itinerary</h6>
+        {itinerary.day_info.map((item, index) => {
+          return (
+            <>
+              <h6>Day {item.day}</h6>
+              <ul className="extras">
+                {item.activities.map((item, index) => {
+                  return <li key={index}>-{item}</li>;
+                })}
+              </ul>
+            </>
+          );
+        })}
       </section>
     </>
   );
