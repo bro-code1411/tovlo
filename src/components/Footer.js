@@ -58,13 +58,25 @@ const Footer = () => {
               English
             </span>
             <span>
-              <Facebook />
+              <a
+                href="https://www.facebook.com/tovlo.in/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Facebook />
+              </a>
             </span>
             <span>
               <Twitter />
             </span>
             <span>
-              <Instagram />
+              <a
+                href="https://www.instagram.com/tovlo.in/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Instagram />
+              </a>
             </span>
           </p>
           <p>&copy; Tovlo.in </p>
