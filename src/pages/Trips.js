@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router";
-import TripContainer from "../componenets/TripContainer";
+import TripContainer from "../components/TripContainer";
 
 const Trips = () => {
   const location = useLocation();

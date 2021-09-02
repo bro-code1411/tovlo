@@ -1,10 +1,10 @@
 import React from "react";
 import defaultBcg from "../images/room-1.jpeg";
-import { Banner } from "../componenets/Banner";
+import { BannerError } from "../components/BannerError";
 import { Link, useParams } from "react-router-dom";
 import { TripContext } from "../Context";
 import { useContext } from "react";
-import StyledHero from "../componenets/StyledHero";
+import StyledHero from "../components/StyledHero";
 
 const TripDetails = () => {
   const context = useContext(TripContext);
@@ -30,12 +30,12 @@ const TripDetails = () => {
   return (
     <>
       <StyledHero img={mainImg || defaultBcg}>
-        <Banner title={`${name} trip`}>
+        <BannerError title={`${name} trip`}>
           <Link to="/trips" className="btn-primary">
             {" "}
             back to trips
           </Link>
-        </Banner>
+        </BannerError>
       </StyledHero>
       <section className="single-room">
         <div className="single-room-images">
