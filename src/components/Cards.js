@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Cards = ({ title, items, urlPrefix }) => {
+const Cards = ({ title, items }) => {
   return (
     <CardsSection length={items.length}>
       <h2>{title}</h2>
@@ -35,7 +35,7 @@ export default Cards;
 const CardsSection = styled.section`
   .cards {
     display: grid;
-    grid-template-columns: repeat(${(props) => props.length}, 1fr);
+    grid-template-columns: repeat(${(items) => items.length}, 1fr);
     gap: 1.5rem;
     margin-bottom: -1.5rem;
     padding: 1.5rem 0;
@@ -83,7 +83,7 @@ const CardsSection = styled.section`
   }
   @media (max-width: 36rem) {
     .cards {
-      grid-template-columns: repeat(${(props) => props.length}, 80%);
+      grid-template-columns: repeat(${(items) => items.length}, 80%);
       grid-template-rows: 1fr;
       overflow: scroll;
       margin: 0 -1.5rem -1.5rem -1.5rem;
