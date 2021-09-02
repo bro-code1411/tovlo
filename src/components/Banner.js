@@ -8,7 +8,12 @@ const Banner = () => {
       <span>
         <h2>Trip Organizer</h2>
         <p>Share your trips with the amazing tovlo community.</p>
-        <a href="#" className="btn btn-light">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSctnJxmL8pLMqKg15ZteoiwM0nTkDCtxPuAYbbxRz8-sUgAGg/viewform?vc=0&c=0&w=1&flr=0"
+          rel="noopener noreferrer"
+          target="_blank"
+          className="btn btn-light"
+        >
           Learn more
         </a>
       </span>

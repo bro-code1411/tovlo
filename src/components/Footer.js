@@ -28,7 +28,15 @@ const Footer = () => {
         <span>
           <h2>Host</h2>
           <ul>
-            <li>Host your tips</li>
+            <li>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSctnJxmL8pLMqKg15ZteoiwM0nTkDCtxPuAYbbxRz8-sUgAGg/viewform?vc=0&c=0&w=1&flr=0"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Host your tips
+              </a>
+            </li>
             <li>Guidelines for hosts</li>
           </ul>
         </span>
