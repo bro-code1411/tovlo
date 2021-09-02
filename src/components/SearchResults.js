@@ -20,7 +20,7 @@ const SearchResults = ({ results, setSelectedLocation }) => {
     <ResultsDiv className="hero">
       <div className="inner">
         <p className="details">300+ stays -to </p>
-        <h1>Stays in {location.searchString}</h1>
+        <h1>Trips {location.searchString}</h1>
 
         <div className="results">
           {results.map((item, index) => (

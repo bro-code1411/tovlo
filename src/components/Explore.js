@@ -9,14 +9,8 @@ const Explore = () => {
         {places.map((item, index) => (
           <div key={index} className="item">
             <div className="img">
-              <img
-                width={64}
-                height={64}
-                alt={item.name}
-                src={item.url}
-                className="shadow"
-              />
-              <img width={128} height={128} alt={item.name} src={item.url} />
+              <img alt={item.name} src={item.url} className="shadow" />
+              <img alt={item.name} src={item.url} />
             </div>
             <span>
               <h3>{item.name}</h3>

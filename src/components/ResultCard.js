@@ -80,12 +80,12 @@ const ResultCard = ({ location, onClick, trip }) => {
   );
 };
 
-const ImageComponent = ({ index, url, location }) => {
+const ImageComponent = ({ url, location }) => {
   const [loading, setLoading] = useState(false);
 
   return (
     <div className={`img ${loading ? "loading" : null}`}>
-      <img layout="fill" alt={location} src={url} />
+      <img layout="fill" alt={location} src={url} className="insideImage" />
     </div>
   );
 };
@@ -110,6 +110,10 @@ const CardDiv = styled.div`
     .img {
       object-fit: cover;
       flex: 0 0 100%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
       position: relative;
       scroll-snap-align: start;
       &.loading {
@@ -125,6 +129,12 @@ const CardDiv = styled.div`
     }
     img {
       transition: transform 0.2s;
+    }
+    .insideImage {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
     }
   }
   @keyframes shimmer {
@@ -217,7 +227,8 @@ const CardDiv = styled.div`
       font-weight: 400;
     }
   }
-  .description {
+  .description,
+  .total {
     display: none;
     color: #889;
   }
@@ -253,6 +264,12 @@ const CardDiv = styled.div`
       width: 100%;
       flex-direction: column;
       align-items: flex-end;
+      & .total {
+        font-weight: 400;
+        font-size: 0.85rem;
+        color: #889;
+        display: inline-block;
+      }
     }
     .rating {
       position: absolute;

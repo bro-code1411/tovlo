@@ -10,14 +10,8 @@ const Cards = ({ title, items }) => {
         {items.map((item, index) => (
           <div key={index} className="card">
             <div className="img">
-              <img
-                width={128}
-                height={128}
-                alt={item.title}
-                src={item.img}
-                className="shadow"
-              />
-              <img width={256} height={256} alt={item.title} src={item.img} />
+              <img alt={item.title} src={item.img} className="shadow" />
+              <img alt={item.title} src={item.img} />
             </div>
             <span>
               <h3>{item.title}</h3>
