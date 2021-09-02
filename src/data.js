@@ -14,6 +14,38 @@ import img9 from "./images/room-9.jpeg";
 import img10 from "./images/room-10.jpeg";
 import img11 from "./images/room-11.jpeg";
 import img12 from "./images/room-12.jpeg";
+import live1 from "./images/live/1.jpg";
+import live2 from "./images/live/2.jpg";
+import live3 from "./images/live/3.jpg";
+import live4 from "./images/live/4.jpg";
+import explore1 from "./images/explore/1.jpg";
+import explore2 from "./images/explore/2.jpg";
+import explore3 from "./images/explore/3.jpg";
+import explore4 from "./images/explore/4.jpg";
+import explore5 from "./images/explore/5.jpg";
+import explore6 from "./images/explore/6.jpg";
+import explore7 from "./images/explore/7.jpg";
+import explore8 from "./images/explore/8.jpg";
+import result1 from "./images/results/1.jpg";
+import result2 from "./images/results/2.jpg";
+import result3 from "./images/results/3.jpg";
+import result4 from "./images/results/4.jpg";
+import result5 from "./images/results/5.jpg";
+import result6 from "./images/results/6.jpg";
+import result7 from "./images/results/7.jpg";
+import result8 from "./images/results/8.jpg";
+import result9 from "./images/results/9.jpg";
+import result10 from "./images/results/10.jpg";
+import result11 from "./images/results/11.jpg";
+import result12 from "./images/results/12.jpg";
+import result13 from "./images/results/13.jpg";
+import result14 from "./images/results/14.jpg";
+import result15 from "./images/results/15.jpg";
+import result16 from "./images/results/16.jpg";
+import result17 from "./images/results/17.jpg";
+import result18 from "./images/results/18.jpg";
+import result19 from "./images/results/19.jpg";
+import result20 from "./images/results/20.jpg";
 
 export const items = [
   {
@@ -846,7 +878,7 @@ export const trip_data = [
       slug: "kasol",
       name: "Kasol Kheerganga",
       description: [
-        "The Kasol Kheerganga Trek starts at Kasol, a small village located in the Kullu district of Himachal Pradesh.",
+        "The Kasol Kheerganga Trek starts at Kasol, a small village located in the Kullu district of HP.",
         " It is nestled deep in the scenic Parvati Valley and is fast emerging as a major spot for tourists looking for budget travelling. Kheerganga’s history is believed to be dated thousands of years back, with the natural place coming into existence as the abode of Lord Shiva. The Kasol Kheerganga (Khir Ganga) trek is a favourite amongst those seeking a backpacker’s adventure in Kasol or Kullu.",
       ],
       rating: 4,
@@ -908,28 +940,28 @@ export const trip_data = [
       {
         fields: {
           file: {
-            url: trip1,
+            url: result1,
           },
         },
       },
       {
         fields: {
           file: {
-            url: trip2,
+            url: result2,
           },
         },
       },
       {
         fields: {
           file: {
-            url: trip3,
+            url: result3,
           },
         },
       },
       {
         fields: {
           file: {
-            url: trip4,
+            url: result15,
           },
         },
       },
@@ -950,3 +982,46 @@ export const transport_type = {
   3: "AC Semi-Sleeper",
   4: "Self Drive",
 };
+
+export const live = {
+  title: "Experiences:",
+  items: [
+    {
+      title: "Weekend getaways",
+      img: live1,
+    },
+    {
+      title: "Unique destinations",
+      img: live2,
+    },
+    {
+      title: "Relaxing stays",
+      img: live3,
+    },
+    {
+      title: "Road Trips",
+      img: live1,
+    },
+  ],
+};
+
+export const places = [
+  { name: "Bengaluru", time: 3, url: explore1 },
+  { name: "Puducherry", time: 3, url: explore2 },
+  { name: "Kodaikannal", time: 3.5, url: explore3 },
+  { name: "Mysuru", time: 4, url: explore4 },
+  { name: "Chennai", time: 4.5, url: explore5 },
+  { name: "Kochi", time: 6, url: explore6 },
+  { name: "Ooty", time: 3.5, url: explore7 },
+  { name: "Trivandrum", time: 7.5, url: explore8 },
+];
+
+export const resultImages = [
+  ["11.jpg", "12.jpg", "13.jpg", "19.jpg"],
+  ["5.jpg", "6.jpg", "7.jpg"],
+  ["4.jpg", "9.jpg", "10.jpg"],
+  ["8.jpg"],
+  ["1.jpg", "2.jpg", "3.jpg", "15.jpg"],
+  ["16.jpg", "17.jpg"],
+  ["18.jpg", "14.jpg", "20.jpg"],
+];
