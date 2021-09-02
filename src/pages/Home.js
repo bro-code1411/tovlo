@@ -1,5 +1,4 @@
 import React from "react";
-import AdSence from "react-adsense";
 import Cards from "../components/Cards";
 import { live } from "../data";
 import Footer from "../components/Footer";
@@ -14,14 +13,14 @@ const Home = () => {
       <Explore />
 
       {/* <FeaturedTrips /> */}
-      <AdSence.Google
+      {/* <AdSence.Google
         className="adsbygoogle"
         style={{ display: "block" }}
         format="fluid"
         layoutKey="-7r+eu-z-1k+6t"
         client="ca-pub-7305486482263598"
         slot="4597530725"
-      />
+      /> */}
       <Banner />
       <Footer />
     </>
