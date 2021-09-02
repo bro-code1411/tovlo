@@ -8,7 +8,9 @@ const Hero = () => {
     <HeroSection className="light hero">
       <div className="heroInner">
         <span>
-          <h1>The Perfect Trip You Deserve</h1>
+          <h1>Find The</h1>
+          <h1>Trip You</h1>
+          <h1>Deserve !</h1>
           <Link to="/search">
             <a href="#" className="btn btn-light">
               Explore Now
@@ -42,6 +44,7 @@ const HeroSection = styled.section`
     font-size: clamp(2rem, 5.5vw, 3.25rem);
     line-height: 1.2;
     margin-bottom: 1.5rem;
+    text-shadow: 2px 2px var(--red);
   }
   @media (max-width: 36rem) {
     background: linear-gradient(to bottom, #0a0c2c80 3rem, transparent),
