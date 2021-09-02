@@ -8,7 +8,7 @@ const Hero = () => {
     <HeroSection className="light hero">
       <div className="heroInner">
         <span>
-          <h1>Tovlo: Find the Perfect Trip You Deserve</h1>
+          <h1>The Perfect Trip You Deserve</h1>
           <Link to="/search">
             <a href="#" className="btn btn-light">
               Explore Now

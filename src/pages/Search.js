@@ -41,8 +41,7 @@ const Search = () => {
     return <Loading />;
   }
   const filterTrips = () => {
-    let { type, capacity, price, minSize, maxSize, breakfast, pets } =
-      tripFilter;
+    let { type, capacity } = tripFilter;
     let tempTrips = [...trips];
     // transform values
     capacity = parseInt(capacity);

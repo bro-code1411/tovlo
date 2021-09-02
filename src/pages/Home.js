@@ -1,5 +1,4 @@
 import React from "react";
-import FeaturedTrips from "../components/FeaturedTrips";
 import AdSence from "react-adsense";
 import Cards from "../components/Cards";
 import { live } from "../data";
@@ -14,7 +13,7 @@ const Home = () => {
       <Cards {...live} />
       <Explore />
 
-      <FeaturedTrips />
+      {/* <FeaturedTrips /> */}
       <AdSence.Google
         className="adsbygoogle"
         style={{ display: "block" }}

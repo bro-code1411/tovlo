@@ -1,5 +1,5 @@
 import React from "react";
-import defaultBcg from "../images/room-1.jpeg";
+import defaultBcg from "../images/defaultBcg.jpeg";
 import { BannerError } from "../components/BannerError";
 import { Link, useParams } from "react-router-dom";
 import { TripContext } from "../Context";

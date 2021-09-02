@@ -1,5 +1,4 @@
 import React from "react";
-import Trip from "./Trip";
 
 const TripList = ({ trips, searchString }) => {
   if (trips.length === 0) {
@@ -24,9 +23,9 @@ const TripList = ({ trips, searchString }) => {
           <div className="filter-button">Price</div>
           <div className="filter-button">More filters</div>
         </div>
-        {trips.map((item) => {
-          return <Trip key={item.id} trip={item} />;
-        })}
+        {/* {trips.map((item) => {
+          // return <Trip key={item.id} trip={item} />;
+        })} */}
       </section>
     </section>
   );

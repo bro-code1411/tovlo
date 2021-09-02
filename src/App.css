@@ -97,7 +97,7 @@ h6 {
   justify-content: center;
 }
 .roomsHero {
-  background-image: url("./images/room-2.jpeg");
+  background-image: url("./images/defaultBcg.jpeg");
   min-height: 60vh;
 }
 .homeHero {
@@ -509,7 +509,7 @@ h6 {
 }
 
 :root {
-  --red: #e0565b;
+  --red: #97724d;
   --yellow: #ffffd6;
   --dark: #2e2e48;
   --brown: #3f3f1a;
@@ -523,19 +523,12 @@ h6 {
 body.dark {
   --dark: #fafafc;
   --white: #112;
-  --light: #1e1e38;
+  --light: #171009;
   --gray: #002;
 }
 body.dark section.light {
   --light: #fafafc;
-  --dark: #2e2e48;
-}
-body.dark .mapboxgl-popup {
-  --dark: #2e2e48;
-  --white: #fff;
-}
-body.dark .mapgl-container {
-  filter: invert(100%) hue-rotate(180deg);
+  --dark: #171009;
 }
 
 body {

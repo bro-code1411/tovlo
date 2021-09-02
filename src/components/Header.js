@@ -4,7 +4,6 @@ import { useRef, useEffect, useState } from "react";
 import { useLocation, useHistory } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import MobileNav from "./MobileNav";
-import logo from "../images/logo-web.svg";
 
 const Header = ({ placeholder }) => {
   const navRef = useRef(null);
@@ -290,7 +289,7 @@ const HeaderSection = styled.header`
       margin-right: 1.5rem;
     }
     .userIcon {
-      background: #2e2e48;
+      background: var(--red);
       border-radius: 99px;
       height: 1.5rem;
       width: 1.5rem;
@@ -302,7 +301,7 @@ const HeaderSection = styled.header`
       padding: 0.25rem 0.25rem 0.25rem 0.5rem;
     }
     .menu {
-      color: #2e2e48;
+      color: var(--red);
       margin-right: 0.5rem;
     }
   }

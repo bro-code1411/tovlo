@@ -1,19 +1,3 @@
-import trip1 from "./images/details-1.jpeg";
-import trip2 from "./images/details-2.jpeg";
-import trip3 from "./images/details-3.jpeg";
-import trip4 from "./images/details-4.jpeg";
-import img1 from "./images/room-1.jpeg";
-import img2 from "./images/room-2.jpeg";
-import img3 from "./images/room-3.jpeg";
-import img4 from "./images/room-4.jpeg";
-import img5 from "./images/room-5.jpeg";
-import img6 from "./images/room-6.jpeg";
-import img7 from "./images/room-7.jpeg";
-import img8 from "./images/room-8.jpeg";
-import img9 from "./images/room-9.jpeg";
-import img10 from "./images/room-10.jpeg";
-import img11 from "./images/room-11.jpeg";
-import img12 from "./images/room-12.jpeg";
 import hiking from "./images/live/hiking.jpg";
 import relaxing_trip from "./images/live/relaxing_trip.jpg";
 import roadtrip from "./images/live/roadtrip.jpg";
@@ -30,22 +14,9 @@ import result1 from "./images/results/1.jpg";
 import result2 from "./images/results/2.jpg";
 import result3 from "./images/results/3.jpg";
 import result4 from "./images/results/4.jpg";
-import result5 from "./images/results/5.jpg";
-import result6 from "./images/results/6.jpg";
-import result7 from "./images/results/7.jpg";
-import result8 from "./images/results/8.jpg";
 import result9 from "./images/results/9.jpg";
-import result10 from "./images/results/10.jpg";
-import result11 from "./images/results/11.jpg";
-import result12 from "./images/results/12.jpg";
-import result13 from "./images/results/13.jpg";
-import result14 from "./images/results/14.jpg";
 import result15 from "./images/results/15.jpg";
-import result16 from "./images/results/16.jpg";
-import result17 from "./images/results/17.jpg";
-import result18 from "./images/results/18.jpg";
-import result19 from "./images/results/19.jpg";
-import result20 from "./images/results/20.jpg";
+import result10 from "./images/results/10.jpg";
 
 export const trip_data = [
   {
@@ -100,28 +71,21 @@ export const trip_data = [
       {
         fields: {
           file: {
-            url: trip1,
+            url: result4,
           },
         },
       },
       {
         fields: {
           file: {
-            url: trip2,
+            url: result9,
           },
         },
       },
       {
         fields: {
           file: {
-            url: trip3,
-          },
-        },
-      },
-      {
-        fields: {
-          file: {
-            url: trip4,
+            url: result10,
           },
         },
       },

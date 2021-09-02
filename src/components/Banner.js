@@ -36,6 +36,7 @@ const HostingSection = styled.section`
   }
   span {
     max-width: var(--maxWidth);
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
