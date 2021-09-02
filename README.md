@@ -1,4 +1,4 @@
-# TOVLO-The trip you deserve
+# TOVLO- Find the trip you deserve
 
 A Collection of all the trip organisers in India. Inspect, compare and choose the best one for you.
 
