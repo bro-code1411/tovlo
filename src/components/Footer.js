@@ -9,9 +9,9 @@ const Footer = () => {
         <span>
           <h2>About</h2>
           <ul>
-            <li>How Tovlo works</li>
+            <li>How FindMyTrip works</li>
             <li>Newsroom</li>
-            <li>Tovlo 2021</li>
+            <li>FindMyTrip 2021</li>
             <li>Investors</li>
             <li className="lg-hidden">Careers</li>
             <li className="lg-hidden">Founders</li>
@@ -59,7 +59,7 @@ const Footer = () => {
             </span>
             <span>
               <a
-                href="https://www.facebook.com/tovlo.in/"
+                href="https://www.facebook.com/findmytrip.in/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -71,7 +71,7 @@ const Footer = () => {
             </span>
             <span>
               <a
-                href="https://www.instagram.com/tovlo.in/"
+                href="https://www.instagram.com/findmytrip.in/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -79,7 +79,7 @@ const Footer = () => {
               </a>
             </span>
           </p>
-          <p>&copy; Tovlo.in </p>
+          <p>&copy; findmytrip.in </p>
         </span>
       </div>
     </FooterSection>

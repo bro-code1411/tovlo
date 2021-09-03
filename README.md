@@ -1,8 +1,8 @@
-# TOVLO- Find the trip you deserve
+# FindMyTrip- Find the trip you deserve
 
 A Collection of all the trip organisers in India. Inspect, compare and choose the best one for you.
 
-Live Version here [tovlo.in](https://tovlo.in)
+Live Version here [findmytrip.in](https://findmytrip.in)
 
 ## Local Setup
 
@@ -31,7 +31,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
@@ -42,8 +41,8 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 Setup containers and run
 
-`docker build -t tovlo .`
+`docker build -t findmytrip .`
 
-`docker run -d -p 3000:3000 tovlo`
+`docker run -d -p 3000:3000 findmytrip`
 
 The app runs on nginx server and is deplyed on container.

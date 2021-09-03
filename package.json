@@ -1,8 +1,8 @@
 {
-  "name": "tovlo",
+  "name": "findmytrip",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://tovlo.in",
+  "homepage": "http://findmytrip.in",
   "dependencies": {
     "@heroicons/react": "^1.0.4",
     "@testing-library/jest-dom": "^5.14.1",
