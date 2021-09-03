@@ -1,8 +1,8 @@
 version: "3.4"
 
 services:
-  findmytrip:
-    image: findmytrip
+  findyourtrip:
+    image: findyourtrip
     build:
       context: .
       dockerfile: ./Dockerfile
