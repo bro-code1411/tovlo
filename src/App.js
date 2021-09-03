@@ -9,7 +9,7 @@ import ReactGA from "react-ga";
 import RouteChangeTracker from "./components/RouterChangeTracker";
 import Search from "./pages/Search";
 
-const TRACKING_ID = "G-J4LXKVS0BL";
+const TRACKING_ID = "G-EQDF57M1N9";
 ReactGA.initialize(TRACKING_ID);
 
 function App() {
