@@ -1,8 +1,8 @@
 {
-  "name": "findmytrip",
+  "name": "findyourtrip",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://findmytrip.in",
+  "homepage": "http://findyourtrip.in",
   "dependencies": {
     "@heroicons/react": "^1.0.4",
     "@testing-library/jest-dom": "^5.14.1",

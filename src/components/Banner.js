@@ -7,7 +7,7 @@ const Banner = () => {
     <HostingSection className="light">
       <span>
         <h2>Trip Organizer</h2>
-        <p>Share your trips with the amazing FindMyTrip community.</p>
+        <p>Share your trips with the amazing FindYourTrip community.</p>
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSctnJxmL8pLMqKg15ZteoiwM0nTkDCtxPuAYbbxRz8-sUgAGg/viewform?vc=0&c=0&w=1&flr=0"
           rel="noopener noreferrer"

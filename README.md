@@ -1,8 +1,8 @@
-# FindMyTrip- Find the trip you deserve
+# FindYourTrip- Find the trip you deserve
 
 A Collection of all the trip organisers in India. Inspect, compare and choose the best one for you.
 
-Live Version here [findmytrip.in](https://findmytrip.in)
+Live Version here [findyourtrip.in](https://findyourtrip.in)
 
 ## Local Setup
 
@@ -41,8 +41,8 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 Setup containers and run
 
-`docker build -t findmytrip .`
+`docker build -t findyourtrip .`
 
-`docker run -d -p 3000:3000 findmytrip`
+`docker run -d -p 3000:3000 findyourtrip`
 
 The app runs on nginx server and is deplyed on container.

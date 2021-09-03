@@ -90,7 +90,7 @@ const Header = ({ placeholder }) => {
               />
             </g>
           </svg>
-          {/* <span>findmytrip</span> */}
+          {/* <span>findyourtrip</span> */}
         </div>
         <nav ref={navRef}>
           <a href="#" className="active">

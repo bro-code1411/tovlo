@@ -9,9 +9,9 @@ const Footer = () => {
         <span>
           <h2>About</h2>
           <ul>
-            <li>How FindMyTrip works</li>
+            <li>How FindYourTrip works</li>
             <li>Newsroom</li>
-            <li>FindMyTrip 2021</li>
+            <li>FindYourTrip 2021</li>
             <li>Investors</li>
             <li className="lg-hidden">Careers</li>
             <li className="lg-hidden">Founders</li>
@@ -59,7 +59,7 @@ const Footer = () => {
             </span>
             <span>
               <a
-                href="https://www.facebook.com/findmytrip.in/"
+                href="https://www.facebook.com/findyourtrip.in/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -71,7 +71,7 @@ const Footer = () => {
             </span>
             <span>
               <a
-                href="https://www.instagram.com/findmytrip.in/"
+                href="https://www.instagram.com/findyourtrip.in/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -79,7 +79,7 @@ const Footer = () => {
               </a>
             </span>
           </p>
-          <p>&copy; findmytrip.in </p>
+          <p>&copy; findyourtrip.in </p>
         </span>
       </div>
     </FooterSection>
