@@ -1,3 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
-User-agent: *
 Sitemap: https://findyourtrip.in/sitemap.xml
+User-agent: *
+Disallow:
