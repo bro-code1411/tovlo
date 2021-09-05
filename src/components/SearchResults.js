@@ -6,10 +6,8 @@ import { useLocation } from "react-router-dom";
 
 const SearchResults = ({ results, setSelectedLocation }) => {
   const location = useLocation();
-  console.log(location);
   const setSelection = (data) => {
     setSelectedLocation(data);
-    console.log(data);
     window.scrollTo({
       top: 0,
       behavior: "smooth",
@@ -60,12 +58,12 @@ const ResultsDiv = styled.section`
   height: fit-content;
   padding: 3rem var(--sidePadding);
   z-index: 1;
+  flex: 1;
   position: relative;
   border-radius: 1.5rem 1.5rem 0 0;
   box-shadow: 0 -1rem 2rem -1rem #0003;
   background: var(--light);
   max-width: calc(var(--containerWidth) + 2 * var(--sidePadding));
-  margin: 0 auto;
   .inner {
     display: flex;
     flex-direction: column;

@@ -8,7 +8,6 @@ const TripList = ({ trips, searchString }) => {
       </div>
     );
   }
-  console.log(searchString);
   return (
     <section className="flex">
       <section className="filter-container">

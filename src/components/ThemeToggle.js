@@ -1,26 +1,17 @@
-import { useEffect, useState } from "react";
+import { useEffect, useContext } from "react";
 import { Sun, Moon } from "react-feather";
 import styled from "styled-components";
+import { ThemeContext } from "../context/ThemeContext";
 
 const ThemeToggle = ({ text, icon, className }) => {
-  const [isDark, setIsDark] = useState(false);
-  useEffect(() => {
-    setIsDark(document.body.classList.contains("dark"));
-  }, []);
-  useEffect(() => {
-    if (isDark) {
-      document.body.classList.add("dark");
-      window.localStorage.setItem("airbnbTheme", "dark");
-    } else {
-      document.body.classList.remove("dark");
-      window.localStorage.setItem("airbnbTheme", "light");
-    }
-  }, [isDark]);
+  const theme = useContext(ThemeContext);
+
+  const { isDark, setIsDark } = theme;
 
   return (
     <Container
       className={`${className} themeToggle`}
-      onClick={() => setIsDark(!isDark)}
+      onClick={() => setIsDark((isDark) => !isDark)}
     >
       {icon && (
         <> {isDark ? <Sun className="sun" /> : <Moon className="moon" />} </>

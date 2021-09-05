@@ -13,10 +13,7 @@ const TripProvider = ({ children }) => {
 
   useEffect(() => {
     let trips = formatData(trip_data);
-    console.log(trips);
-
     let featuredTrips = trips.filter((trip) => trip.plan.featured === true);
-    console.log(featuredTrips);
     setTripData({
       trips,
       featuredTrips,

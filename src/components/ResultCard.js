@@ -16,7 +16,6 @@ const ResultCard = ({ location, onClick, trip }) => {
     plan: { transport_type_id },
   } = trip;
 
-  console.log(trip);
   const [liked, setLiked] = useState(false);
   const imagesRef = useRef(null);
   const [currSlide, setCurrSlide] = useState(0);
@@ -189,8 +188,8 @@ const CardDiv = styled.div`
     transition: all 0.2s;
     color: #fff;
     &.liked {
-      stroke: var(--red);
-      fill: var(--red);
+      stroke: #ff0000;
+      fill: #ff0000;
       filter: drop-shadow(0 0.15rem 0.25rem #0008);
     }
   }

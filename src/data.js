@@ -34,7 +34,7 @@ export const trip_data = [
       duration_nights: 4,
       price: 2000,
       meals: ["BREAKFAST"],
-      acc_type_id: 4,
+      acc_type: "Tent",
       transport_type_id: 3,
       featured: true,
     },
@@ -108,7 +108,7 @@ export const trip_data = [
       duration_nights: 4,
       price: 2000,
       meals: ["BREAKFAST"],
-      acc_type_id: 4,
+      acc_type: "Hotel - 5 Star",
       transport_type_id: 3,
       featured: true,
     },
@@ -190,13 +190,13 @@ export const trip_data = [
   },
 ];
 
-export const acc_type = {
+export const acc_type_meta = {
   1: "Hotel - 3 Star",
   2: "Hotel - 4 Star",
   3: "Hotel - 5 Star",
   4: "Tent",
 };
-export const transport_type = {
+export const transport_type_meta = {
   1: "AC Sleeper",
   2: "Non-AC Sleeper",
   3: "AC Semi-Sleeper",
