@@ -18,18 +18,14 @@ const TripContainer = ({ searchString }) => {
     org: [],
     acc_type: [],
     capacity: 1,
-    price: 0,
-    minPrice: 0,
-    maxPrice: 0,
+    price: [],
     breakfast: false,
     pets: false,
   });
   useEffect(() => {
-    let maxPrice = Math.max(...trips.map((item) => item.plan.price));
     setTripFilter({
       ...tripFilter,
-      price: maxPrice,
-      maxPrice,
+      price: [getMinPrice(), getMaxPrice()],
       org: trips.map((a) => {
         return { name: a.org.org_name, isChecked: true };
       }),
@@ -39,6 +35,13 @@ const TripContainer = ({ searchString }) => {
     });
   }, [trips]);
 
+  console.log(tripFilter);
+  function getMaxPrice() {
+    return Math.max(...trips.map((item) => item.plan.price));
+  }
+  function getMinPrice() {
+    return Math.min(...trips.map((item) => item.plan.price));
+  }
   const handleChange = (event) => {
     const target = event.target;
     if (target.type === "checkbox") {
@@ -56,13 +59,16 @@ const TripContainer = ({ searchString }) => {
       setTripFilter({ ...tripFilter, [name]: value });
     }
   };
+  const handlePriceChange = (event, value) => {
+    setTripFilter({ ...tripFilter, price: value });
+  };
 
   if (loading) {
     return <Loading />;
   }
 
   const filterTrips = () => {
-    let { type, capacity, org, acc_type } = tripFilter;
+    let { type, capacity, org, acc_type, price } = tripFilter;
     let tempTrips = [...trips];
     // transform values
     capacity = parseInt(capacity);
@@ -80,13 +86,16 @@ const TripContainer = ({ searchString }) => {
       );
     }
     if (acc_type.length > 0) {
-      console.log(tempTrips);
-
       tempTrips = tempTrips.filter((trip) =>
         acc_type
           .filter((o) => o.isChecked === true)
           .map((o) => o.name)
           .includes(trip.plan.acc_type)
+      );
+    }
+    if (price.length > 0) {
+      tempTrips = tempTrips.filter(
+        (trip) => trip.plan.price >= price[0] && trip.plan.price <= price[1]
       );
     }
     if (capacity !== 1) {
@@ -102,7 +111,13 @@ const TripContainer = ({ searchString }) => {
   return (
     <TripContainerSection>
       <div className="trips-container">
-        <TripFilter tripFilter={tripFilter} handleChange={handleChange} />
+        <TripFilter
+          tripFilter={tripFilter}
+          handleChange={handleChange}
+          handlePriceChange={handlePriceChange}
+          maxPrice={getMaxPrice()}
+          minPrice={getMinPrice()}
+        />
         <SearchResults
           setSelectedLocation={setSelectedLocation}
           results={filterTrips()}

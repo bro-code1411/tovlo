@@ -32,7 +32,7 @@ export const trip_data = [
       locations: ["Chikmagalur, Karnataka"],
       duration_days: 3,
       duration_nights: 4,
-      price: 2000,
+      price: 1000,
       meals: ["BREAKFAST"],
       acc_type: "Tent",
       transport_type_id: 3,

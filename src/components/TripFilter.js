@@ -1,15 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 import { FormControlLabel, Checkbox } from "@material-ui/core";
-
-const TripFilter = ({ tripFilter, handleChange }) => {
+import { withStyles } from "@material-ui/core/styles";
+import Slider from "@material-ui/core/Slider";
+const TripFilter = ({
+  tripFilter,
+  handleChange,
+  handlePriceChange,
+  minPrice,
+  maxPrice,
+}) => {
   const {
     org,
     acc_type,
     capacity,
-    // price,
-    // minPrice,
-    // maxPrice,
+    price,
     // breakfast,
     // pets,
   } = tripFilter;
@@ -57,6 +62,17 @@ const TripFilter = ({ tripFilter, handleChange }) => {
             <p>Accomodation:</p>
             {getCheckBoxes(acc_type, "acc_type")}
           </div>
+          <div className="filter-col-item price-slider-item">
+            <p>Price:</p>
+            <PriceSlider
+              aria-labelledby="range-slider"
+              valueLabelDisplay="aurto"
+              onChange={handlePriceChange}
+              min={minPrice}
+              max={maxPrice}
+              value={price}
+            />
+          </div>
           <div className="filter-button">More filters</div>
         </div>
       </div>
@@ -65,6 +81,38 @@ const TripFilter = ({ tripFilter, handleChange }) => {
 };
 
 export default TripFilter;
+
+const PriceSlider = withStyles({
+  root: {
+    color: "primary",
+    height: 6,
+    maxWidth: "90%",
+    marginLeft: 9,
+  },
+  thumb: {
+    height: 22,
+    width: 22,
+    backgroundColor: "#fff",
+    border: "2px solid currentColor",
+    marginTop: -8,
+    marginLeft: -12,
+    "&:focus, &:hover, &$active": {
+      boxShadow: "inherit",
+    },
+  },
+  active: {},
+  valueLabel: {
+    left: "calc(-50% + 4px)",
+  },
+  track: {
+    height: 8,
+    borderRadius: 4,
+  },
+  rail: {
+    height: 6,
+    borderRadius: 2,
+  },
+})(Slider);
 
 const TripFilterSection = styled.header`
   .filter-container {
@@ -84,9 +132,9 @@ const TripFilterSection = styled.header`
   .filter-col {
     display: none;
     display: flex;
+    gap: 0.5rem;
     flex-direction: column;
     margin-bottom: 1.25rem;
-    margin-left: 0.75rem;
     white-space: nowrap;
   }
   .filter-col-item {
