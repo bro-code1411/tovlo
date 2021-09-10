@@ -5,9 +5,16 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Explore from "../components/Explore";
 import Banner from "../components/Banner";
+import { Helmet } from "react-helmet";
+
 const Home = () => {
   return (
     <>
+      <Helmet htmlAttributes>
+        <html lang="en" />
+        <title>FindYourTrip: Home</title>
+        <meta name="India's first and only trip aggregator. Find the trip you deserve from a collection of 10,000+ trips organised by various associations across India. Inspect, compare and choose the best trip for you. " />
+      </Helmet>
       <Hero />
       <Cards {...live} />
       <Explore />

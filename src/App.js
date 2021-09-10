@@ -12,9 +12,12 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import { ThemeContext } from "./context/ThemeContext";
 import { useContext } from "react";
 import { darkTheme, lightTheme } from "./components/MuiTheme";
+import { createBrowserHistory } from "history";
 
 const TRACKING_ID = "G-5DVGR850X9";
 ReactGA.initialize(TRACKING_ID);
+
+const history = createBrowserHistory();
 
 function App() {
   const context = useContext(ThemeContext);
@@ -23,7 +26,7 @@ function App() {
 
   return (
     <>
-      <RouteChangeTracker />
+      <RouteChangeTracker history={history} />
       <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
         <Header />
         <Switch>

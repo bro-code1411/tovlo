@@ -13,8 +13,8 @@ const TripFilter = ({
   const {
     org,
     acc_type,
-    capacity,
     price,
+    //capacity,
     // breakfast,
     // pets,
   } = tripFilter;
